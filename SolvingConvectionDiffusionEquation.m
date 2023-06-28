@@ -58,7 +58,7 @@ function calculation(time,a,b,L,v,D,Cinitial,Cb,ngrid)
         C_imp(i,:)=Cnp1';
     end
     
-    %ANALYTİC SOLUTİON
+    %analytical SOLUTİON
     cc=linspace(0,L,ngrid+1);
     t=time;
     AnSol=1/2*(erfc((cc-v*t)/(2*sqrt(D*t)))+exp(v*cc/D).*erfc((cc+v*t)/(2*sqrt(D*t))));
